@@ -40,13 +40,8 @@ nav img {
   background-size: 100%;
   background-repeat: no-repeat;
   color: #ffffff;
-<<<<<<< HEAD
-  padding: 100px;
-  height: 1000px;
-=======
   padding: 250px 100px 300px;
   margin: 0;
->>>>>>> a7c5e6f5445be8ee13642b9c5aff116cf3b03df8
 }
 
 .inicio span {
@@ -79,6 +74,7 @@ h3 {
   .inicio  {
     background-size: 320%;
     background-position: center top;
+    padding: 200px 100px 350px;
   }
 
   nav {
@@ -101,45 +97,6 @@ h3 {
 
 }
 
-<<<<<<< HEAD
-.blanco a {
-  color: #000;
-  font-size: 1.5em;
-  letter-spacing: 0;
-  text-decoration: none;
-  transition: all .5s ease;
-}
-
-.blanco img {
-  height: 3%;
-  margin: 15px;
-  width: 3%;
-}
-
-.arriba {
-  display: flex;
-  justify-content: center;
-}
-
-.arriba img {
-  height: 70%;
-  width: 70%;
-}
-
-.nosotros{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 130px;
-}
-
-.nosotros span {
-  font-size: 30px;
-  margin: 10px 50px;
-}
-
-
-=======
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
   /*COMUTADORAS DE ESCRITORIO*/
 
@@ -150,4 +107,3 @@ h3 {
 
 }
 
->>>>>>> a7c5e6f5445be8ee13642b9c5aff116cf3b03df8
