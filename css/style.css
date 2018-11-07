@@ -51,7 +51,13 @@ header {
   align-items: center;
   justify-content: space-around;
   padding: 100px;
-  height: 1000px;
+  height: 0px;
+  z-index: 2;
+}
+.menu-header p{
+  display: flex;
+  flex-direction: row;
+  color: #ffffff;
 }
 
 header span {
