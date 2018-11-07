@@ -42,7 +42,7 @@ header {
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 100px;
-  height: 1000px;;
+  height: 1000px;
 }
 
 header span {
@@ -50,3 +50,41 @@ header span {
   font-size: 4em;
   letter-spacing: 10px;
 }
+
+.blanco a {
+  color: #000;
+  font-size: 1.5em;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: all .5s ease;
+}
+
+.blanco img {
+  height: 3%;
+  margin: 15px;
+  width: 3%;
+}
+
+.arriba {
+  display: flex;
+  justify-content: center;
+}
+
+.arriba img {
+  height: 70%;
+  width: 70%;
+}
+
+.nosotros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 130px;
+}
+
+.nosotros span {
+  font-size: 30px;
+  margin: 10px 50px;
+}
+
+
