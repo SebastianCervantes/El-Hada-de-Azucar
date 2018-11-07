@@ -4,11 +4,10 @@ body {
 }
 
 nav {
-  z-index: 0;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
   align-items: center;
   margin: 0;
@@ -31,22 +30,79 @@ nav img {
   margin: 15px;
 }
 
-header {
+.inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  z-index: -1;
+  justify-content: center;
+  align-content: center;
   background-image: url("../images/fondo-inicio.png");
   background-size: 100%;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 100px;
-  height: 1000px;;
+  padding: 250px 100px 300px;
+  margin: 0;
 }
 
-header span {
+.inicio span {
   text-align: center;
   font-size: 4em;
   letter-spacing: 10px;
+  margin: 20px 0 0 0;
 }
+
+.inicio h3 {
+  margin: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+  /*CSS Para Dispositivos Chicos*/
+  header,
+  footer,
+  main {
+    width: 100%;
+    max-width: calc(100% - 40%);
+  }
+
+  .inicio  {
+    background-size: 320%;
+    background-position: center top;
+  }
+
+  nav {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .inicio span {
+    font-size: 2.5em;
+  }
+
+  nav img {
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  /*TABLETS Y CRAPPY PCS*/
+
+}
+
+@media screen and (min-width: 1201px) and (max-width: 2400px) {
+  /*COMUTADORAS DE ESCRITORIO*/
+
+}
+
+@media screen and (min-width: 2401px) {
+  /*TODO LO GIGANTE*/
+
+}
+
