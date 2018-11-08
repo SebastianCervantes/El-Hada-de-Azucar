@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Adobe Caslon Pro', sans-serif;
+  font-family: 'Adobe Caslon Pro';
   margin: 0;
   width: 100%;
   max-width: 100%;
@@ -155,7 +155,7 @@ h3 {
   justify-content: center;
   align-content: center;
   color: #ffffff;
-  padding: 100px 0 250px;
+  padding: 80px 0 250px;
   margin: 0;
 }
 
@@ -207,7 +207,7 @@ h3 {
   background-color: rgba(0, 0, 0, 0);
   padding: 5px 15px;
   font-family: 'Adobe Caslon Pro';
-  margin: 15px;
+  margin: 30px;
   text-align: center;
   text-decoration: none;
   border: 2px solid #000000;
@@ -222,7 +222,7 @@ h3 {
 
 /*Mobile*/
 @media screen and (max-width: 600px) {
-  /*CSS Para Dispositivos Chicos*/
+/*CSS Para Dispositivos Chicos*/
 
   .inicio  {
     background-size: 320%;
@@ -246,6 +246,11 @@ h3 {
   .indx-nav img {
     order: -1;
   }
+
+  .equipo-intro div {
+    background-size: 250%;
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
@@ -272,6 +277,12 @@ h3 {
   .indx-nav img {
     order: -1;
   }
+
+  .equipo-intro div {
+    background-size: 250%;
+    background-position: left top;
+  }
+
 }
 
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
