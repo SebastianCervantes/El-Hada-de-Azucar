@@ -1,6 +1,12 @@
 body {
   font-family: 'Adobe Caslon Pro', sans-serif;
   margin: 0;
+
+}
+
+.body-cursos{
+  display: flex;
+  justify-content: column;
 }
 
 nav {
@@ -49,4 +55,81 @@ header span {
   text-align: center;
   font-size: 4em;
   letter-spacing: 10px;
+}
+
+.nav-cursos {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  background: #ffffff;
+}
+
+.nav-cursos a{
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0;
+  font-size: 1.5em;
+  transition: all .5s ease;
+}
+
+.nav-cursos a:hover {
+  color: #c49619;
+  letter-spacing: 6px;
+}
+
+.nav-cursos img {
+  margin: 15px;
+  width: 3%;
+  height: 3%;
+}
+.container-fluid{
+  padding-top: 10%;
+}
+.img-principal{
+  margin-bottom: 20px;
+}
+article div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article img{
+  box-shadow: 10px 15px 20px rgb(0,0, 0, .3);
+  display: block;
+  margin: auto;
+  padding top: -20px;
+  z-index: 0;
+  width:60%;
+}
+
+article h1{
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 5px 20px;
+  font-size: 30px;
+  font-weight: normal;
+  display: flex;
+  transform: translate(0,20px);
+  margin: auto;
+}
+
+article p{
+  width: 80%;
+  padding-top: 30px;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768)
+{
+
 }
