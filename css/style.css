@@ -4,10 +4,6 @@ body {
 
 }
 
-.body-cursos{
-  display: flex;
-  justify-content: column;
-}
 
 nav {
   z-index: 0;
