@@ -6,6 +6,10 @@ body {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   z-index: 0;
   width: 100%;
@@ -584,7 +588,7 @@ footer>section>div>img {
     max-width: calc(100% - 10px);
   }
 
-  .menu-intro div>div>button {
+  .menu-intro div>div>a>button {
     display: none;
   }
 
@@ -693,6 +697,10 @@ footer>section>div>img {
     transform: translate(0,-66px);
   }
 
+  .contacto h1 {
+    margin: 50px 0 0;
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
@@ -772,6 +780,10 @@ footer>section>div>img {
 
   .social>div>img {
     width: 30%;
+  }
+
+  .contacto h1 {
+    margin: 70px 0 0;
   }
 
   .social>div {
