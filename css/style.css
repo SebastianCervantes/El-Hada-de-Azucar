@@ -1,6 +1,10 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Adobe Caslon Pro', sans-serif;
   margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 nav {
@@ -102,7 +106,17 @@ h3 {
 }
 
 <<<<<<< HEAD
-.blanco a {
+.barra-nosotros {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.barra-nosotros a {
   color: #000;
   font-size: 1.5em;
   letter-spacing: 0;
@@ -110,33 +124,245 @@ h3 {
   transition: all .5s ease;
 }
 
-.blanco img {
-  height: 3%;
-  margin: 15px;
-  width: 3%;
+.barra-nosotros a:hover {
+  color: #c49619;
+  letter-spacing: 6px;
 }
 
-.arriba {
+.barra-nosotros img {
+  width: 4%;
+}
+
+.img-principal {
   display: flex;
   justify-content: center;
+  padding-top: 15%;
 }
 
-.arriba img {
-  height: 70%;
+.img-principal div {
+  background-image: url(../images/Arriba.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin: 0;
   width: 70%;
 }
 
-.nosotros{
+.img-principal h1 {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 30px 10px;
+  position: absolute;
+  transform: translate(0, -15px);
+}
+
+.texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto1 h2 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.texto1 h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.texto span{
+  text-align: center;
+  font-size: 30px;
+  width: 70%;
+}
+
+.frase {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  padding-bottom: 25%;
+}
+
+.frase span {
+  text-align: center;
+  font-size: 35px;
+  width: 47%;
+  padding-top: 5%;
+}
+
+.frase span p {
+  position: relative;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  padding-top: 3%;
+}
+
+.frase span strong {
+  color: #c49619;
+}
+
+.frase img{
+  position: absolute;
+  width: 10%;
+  transform: translate(-160px, 40px);
+  z-index: -1;
+}
+
+#cerradas {
+  position: absolute;
+  width: 10%;
+  transform: translate(160px, 90px);
+  z-index: -1;
+}
+
+#fresas {
+  position: absolute;
+  width: 10%;
+  transform: translate(470px, -50px) scale(2.5);
+  z-index: -1;
+}
+
+#mantequilla {
+  position: absolute;
+  width: 10%;
+  transform: translate(-400px, 200px) scale(3.3) rotate(-30deg);
+  z-index: -2;
+}
+
+.estrellas {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 130px;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  flex-direction: column;
 }
 
-.nosotros span {
+.estrellas h1 {
   font-size: 30px;
-  margin: 10px 50px;
+  font-weight: normal;
+  color: #1c2541;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid #c49619;
+  width: 15%;
 }
+
+.img-estrellas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pastel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 5%;
+
+}
+.pastel a img{
+  width: 200px;
+  height: 100%;
+  margin: 10px;
+}
+
+.pastel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(0%);
+  background: none;
+  transition: 0.2s linear;
+}
+
+.pastel a p{
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  transition: 0.09s linear;
+  padding-top: 20%;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.pastel a p:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pastel a:hover {
+  filter: grayscale(80%);
+}
+
+#linea {
+  border-bottom: 2px solid #c49619;
+  width: 15%;
+  height: 100%;
+  padding-top: 3%;
+}
+
+.boton-estrellas {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+.boton-estrellas button {
+  background-color: #f0edee;
+  border: 0;
+  border-radius: 50%;
+  width: 36px;
+  height: 20px;
+  color: #f0edee;
+  margin: 10%;
+}
+
+.estrellas span {
+  font-size: 30px;
+  padding-top: 0.5%;
+}
+
+.boton-estrellas button:hover {
+  background-color: #1c2541;
+  color: #1c2541;
+  transition: 0.3s ease-in;
+
+}
+
+
+
+
+
+
+
+
 
 
 =======
