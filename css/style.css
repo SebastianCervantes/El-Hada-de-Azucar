@@ -130,15 +130,15 @@ h3 {
 }
 
 #scroll-inicio {
-  margin: 150px 0 0;
-  transform: translateY(-60px);
-  position: relative;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-name: flota;
-  animation-fill-mode: forwards;
   animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+  animation-name: flota;
+  animation-timing-function: ease;
+  margin: 150px 0 0;
+  position: relative;
+  transform: translateY(-60px);
 }
 
 @keyframes flota {
@@ -154,33 +154,33 @@ h3 {
 }
 
 .intro {
-  width: 100%;
+  align-content: center;
+  align-items: center;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-content: center;
-  color: #ffffff;
   margin: 0;
+  width: 100%;
 }
 
 .nav-cursos {
-  z-index: 2;
-  position: fixed;
+  align-items: center;
+  background: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
-  align-items: center;
   margin: 0;
-  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav-cursos a{
-  text-decoration: none;
   color: #000000;
-  letter-spacing: 0;
   font-size: 1.5em;
+  letter-spacing: 0;
+  text-decoration: none;
   transition: all .5s ease;
 }
 
@@ -190,21 +190,24 @@ h3 {
 }
 
 .nav-cursos img {
+  height: 3%;
   margin: 15px;
   width: 3%;
-  height: 3%;
 }
+
 .container-fluid{
   padding-top: 10%;
 }
-.img-principal{
+
+.row{
   margin-bottom: 20px;
 }
+
 article div{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
 }
 
 article img{
@@ -212,34 +215,61 @@ article img{
   display: block;
   margin: auto;
   padding-top: -20px;
-  z-index: 0;
   width:60%;
+  z-index: 0;
 }
 
 article h1{
-  z-index: 1;
   background-color: #ffffff;
-  padding: 5px 20px;
+  display: flex;
   font-size: 30px;
   font-weight: normal;
-  display: flex;
-  transform: translate(0,20px);
   margin: auto;
+  padding: 5px 20px;
+  transform: translate(0,20px);
+  z-index: 1;
 }
 
 article p{
-  width: 80%;
-  padding-top: 30px;
-  margin: auto;
   font-size: 25px;
-  text-align: center;
   justify-content: center;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+  width: 80%;
 }
 
-@media screen and (max-width: 768)
-{
-
+.card{
+  width: 80%;
+  display: flex;
+  align-content: center;
+  margin: auto;
 }
+.card a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.card p{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.card img{
+  background: none;
+  display: flex;
+  filter: grayscale(0%);
+  transition: 0.2s linear;
+}
+
+.card img:hover{
+  filter: grayscale(80%);
+}
+
 
 .equipo-intro {
   display: flex;
@@ -344,7 +374,11 @@ article p{
     background-position: center top;
   }
 
-
+  a.img-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .indx-nav a {
     font-size: 2em;
@@ -374,4 +408,3 @@ article p{
   /*TODO LO GIGANTE*/
 
 }
-
