@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Adobe Caslon Pro', sans-serif;
   margin: 0;
@@ -19,7 +20,7 @@ nav a {
   color: #ffffff;
   letter-spacing: 0;
   font-size: 1.5em;
-  transition: all .5s ease;
+  transition: letter-spacing .5s ease;
 }
 
 nav a:hover {
@@ -42,22 +43,23 @@ header {
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 100px;
-  height: 1000px;;
+  height: 1000px;
 }
 
-.menu-header{
+.menu-header section{
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   padding: 100px;
   height: 0px;
+  width: 200px;
   z-index: 2;
+  background-repeat: no-repeat;
 }
 .menu-header p{
-  display: flex;
-  flex-direction: row;
   color: #ffffff;
+  font-family: 'Metropolis';
+  font-weight: 100;
 }
 
 header span {
@@ -65,3 +67,49 @@ header span {
   font-size: 4em;
   letter-spacing: 10px;
 }
+#carta{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  font-weight: 200;
+  font-size: 50px;
+  border-bottom: #c49619 solid;
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+}
+.container div {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  border-radius: 5px;
+  height: calc(100% - 50px);
+}
+
+.container div div {
+  box-shadow: 0 10px 30px rgba(0,0,0, 0.2);
+}
+.contenedor__menu img{
+  width: 250px;
+  height: 250px;
+  display: block;
+  padding: 0;
+}
+.contenedor__menu p{
+  display: block;
+  width: 240px;
+  padding-left: 10px;
+}
+
+.contenedor__menu div div div{
+  display: flex;
+  flex-direction: column ;
+  }
+  .col-md-4 h2 {
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+  }
