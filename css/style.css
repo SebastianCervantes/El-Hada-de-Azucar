@@ -22,7 +22,7 @@ body {
   animation-name: animacion-entrada-nav;
   animation-fill-mode: forwards;
   animation-delay: .3s;
-  background-color: none;
+  background-color: #fff;
   z-index: 2;
 }
 
@@ -45,10 +45,14 @@ body {
 
 .indx-nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   letter-spacing: 0;
   font-size: 1.5em;
   transition: all .5s ease;
+}
+
+h1 {
+  color:#000000;
 }
 
 .indx-nav a:hover {
@@ -56,8 +60,13 @@ body {
   letter-spacing: 6px;
 }
 
-.indx-nav img {
+#home>img {
   margin: 15px;
+  width: 100%;
+}
+
+#home {
+  width: 2%;
 }
 
 .inicio {
@@ -195,7 +204,7 @@ h3 {
 .equipo-intro h1 {
   transform: translate(0, 20px);
   padding: 0 10px;
-  margin: 100px 0 0;
+  margin: 70px 0 0;
 }
 
 .equipo-intro div h2,
@@ -223,6 +232,226 @@ h3 {
   font-size: 2.3em;
 }
 
+.menu-intro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/ListonDorado.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+.menu-intro div>h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #000000;
+  background: linear-gradient(90deg,#999 0%, #ffffff 25%);
+  padding: 5px 15px 5px 60px;
+  z-index: -1;
+  margin: 30px;
+  width: 100%;
+}
+
+.menu-intro div>button {
+  margin: 0;
+}
+
+.menu-intro img {
+  z-index: 2;
+}
+
+.menu-intro>div {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  height: 60vh;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-intro>div>div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#escondido {
+  display: none;
+}
+
+.intro-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/Cursos-intro.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro-cursos h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.intro-cursos button {
+  margin: 0;
+  background-color: #fff;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 90%;
+}
+
+.contacto form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contacto h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: 2em;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 15px;
+  font-family: 'Adobe Caslon Pro';
+  margin: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000000;
+  transition: all .7s ease;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #c49619;
+  font-size: 2.3em;
+}
+
+.contacto iframe {
+  width: 400px;
+  height: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  height: 25vh;
+  padding: 10px 50px;
+}
+
+footer>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+footer>section>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0 10px 0 0;
+}
+
+footer .social{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+footer>section>div>p {
+  color: #fff;
+  font-family: 'Montserrat';
+  margin: 0 0 15px;
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+footer>section>div>.titulo {
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.social>div {
+  display: inline-block;
+  overflow: hidden;
+  height: 55px;
+  width: 250px;
+  margin: 0;
+}
+
+footer>section>div>img {
+  position: relative;
+  transform: translate(0,0);
+  transition: all 0 ease;
+}
+
+#fb {
+  transform: translate(0, 0);
+}
+
+#fb:hover {
+  transform: translate(0,-86px);
+}
+
+#insta {
+  transform: translate(0, 0);
+}
+
+#insta:hover {
+  transform: translate(0,-86px);
+}
+
+#twt {
+  transform: translate(0, 0);
+}
+
+#twt:hover {
+  transform: translate(0,-86px);
+}
+
 /*Mobile*/
 @media screen and (max-width: 600px) {
 /*CSS Para Dispositivos Chicos*/
@@ -245,40 +474,250 @@ h3 {
     font-size: 2.2em;
   }
 
-  .indx-nav img {
-    order: -1;
+  #home>img {
+    width: 10%;
+    margin: 15px;
+    width: 60%;
   }
+
+  #home {
+    order: -1;
+    width: 15%;
+  }
+
 
   .equipo-intro div {
     background-image: url("../images/Equipo-HAmobile.jpg");
     background-size: 120%;
   }
+
+  .equipo-intro div h2{
+    font-size: 1.5em
+  }
+  .equipo-intro div h3 {
+    font-size: 1.2em;
+  }
+
+  .menu-intro>div img {
+    max-width: calc(100% - 10px);
+  }
+
+  .menu-intro div>div>button {
+    display: none;
+  }
+
+  #escondido {
+    display: flex;
+    margin: 60px 30px 0;
+    transform: translate(0, -100px);
+  }
+
+  .menu-intro div>h1 {
+    font-size: 1.5em;
+    max-width: calc(100% - 60px);
+    margin: 20px 0 0;
+    transform: translate(-20px, 0);
+  }
+
+  .menu-intro>div>div {
+    width:70%;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+
+  .menu-intro {
+    background-size: 100%;
+    background-position: 50% 30%;
+    height: 60vh;
+  }
+
+  .intro-cursos {
+    background-size: 200%;
+  }
+
+  .intro-cursos button {
+    transform: translate(0, 200px);
+  }
+
+  .intro-cursos h1 {
+    font-size: 2.5em;
+    margin: 50px 0 0;
+  }
+
+  .contacto form {
+    width: 90%;
+  }
+
+  .contacto h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .contacto iframe {
+    width: 300px;
+    height: 150px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 40vh;
+    padding: 5px
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 8pt;
+  }
+
+  .social>div>img {
+    width: 30%;
+  }
+
+  .social>div {
+    width: 200px;
+  }
+
+  #fb {
+    transform: translate(0, 0);
+  }
+
+  #fb:hover {
+    transform: translate(0,-66px);
+  }
+
+  #insta {
+    transform: translate(0, 0);
+  }
+
+  #insta:hover {
+    transform: translate(0,-66px);
+  }
+
+  #twt {
+    transform: translate(0, 0);
+  }
+
+  #twt:hover {
+    transform: translate(0,-66px);
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   /*TABLETS Y CRAPPY PCS*/
   .inicio  {
-    background-size: 300%;
+    background-size: 250%;
     background-position: center top;
   }
-
-
 
   .indx-nav a {
     font-size: 2em;
   }
 
   .inicio span {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  .indx-nav img {
+  .inicio h3 {
+    font-size: 2em;
+  }
+
+  #home>img {
+    width: 10%;
+    margin: 15px;
+    width: 50%;
+  }
+
+  #home {
     order: -1;
+    width: 10%;
   }
-
   .equipo-intro div {
     background-size: 250%;
     background-position: left top;
+  }
+
+  .equipo-intro h1 {
+    margin: 100px 0 0;
+  }
+
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HAtablet.jpg");
+    background-size: 135%;
+    height: 40vh;
+  }
+
+  .equipo-intro button {
+    margin: 100px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .menu-intro>div img {
+    max-width: calc(100% - 60px);
+  }
+
+  .intro-cursos {
+    background-size: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 30vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  .social>div>img {
+    width: 30%;
+  }
+
+  .social>div {
+    width: 200px;
+  }
+
+  #fb {
+    transform: translate(0, 0);
+  }
+
+  #fb:hover {
+    transform: translate(0,-66px);
+  }
+
+  #insta {
+    transform: translate(0, 0);
+  }
+
+  #insta:hover {
+    transform: translate(0,-66px);
+  }
+
+  #twt {
+    transform: translate(0, 0);
+  }
+
+  #twt:hover {
+    transform: translate(0,-66px);
   }
 
 }
@@ -286,10 +725,181 @@ h3 {
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
   /*COMPUTADORAS DE ESCRITORIO*/
 
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HA.jpg");
+    background-size: 100%;
+    height: 40vh;
+  }
+
+  .equipo-intro h1 {
+    margin: 100px 0 0;
+  }
+
+  .inicio {
+    background-size: 120%;
+  }
+
 }
 
 @media screen and (min-width: 2401px) {
   /*TODO LO GIGANTE*/
+  .inicio  {
+    background-size: 250%;
+    background-position: center top;
+  }
+
+  .indx-nav a {
+    font-size: 4em;
+  }
+
+  .inicio span {
+    font-size: 6em;
+  }
+
+  .inicio>img{
+    width: 5%;
+  }
+
+  .inicio h3 {
+    font-size: 4em;
+  }
+
+  #home>img {
+    width: 50%;
+    margin: 15px;
+  }
+
+  #home {
+    width: 6%;
+  }
+
+  .equipo-intro div {
+    background-size: 250%;
+    background-position: left top;
+  }
+
+  .equipo-intro h1 {
+    margin: 200px 0 0;
+    font-size: 4em;
+  }
+
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HA.jpg");
+    background-size: 100%;
+    height: 50vh;
+  }
+
+  .equipo-intro div h2 {
+    font-size: 3em;
+  }
+
+  .equipo-intro div h3 {
+    font-size: 2em;
+  }
+
+  .intro button,
+  .contacto input[type=submit] {
+    margin: 50px 0 0;
+    font-size: 4em;
+  }
+
+  .menu-intro>div img {
+    width: 90%;
+  }
+
+.menu-intro>div>div {
+  width: 50%;
+}
+
+.menu-intro div>h1 {
+  font-size: 5em;
+  transform: translate(-50px, 0);
+}
+
+.menu-intro>div>div>button {
+  transform: translate(-50px, 0);
+}
+
+  .intro-cursos {
+    background-size: 80%;
+  }
+
+  .intro-cursos h1 {
+    font-size: 6em;
+  }
+
+  .intro-cursos button {
+    margin: 50px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 6em;
+  }
+
+  .contacto iframe {
+    width: 800px;
+    height: 300px;
+  }
+
+  .contacto form {
+    width: 50%;
+  }
+
+  .contacto input[type=text] {
+    font-size: 3em;
+    padding: 20px 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    height: 20vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 25px;
+  }
+
+  .social>div>img {
+    width: 15%;
+  }
+
+  .social>div {
+    width: 600px;
+    height: 70px;
+  }
+
+  #fb {
+    transform: translate(300px, 0);
+  }
+
+  #fb:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #insta {
+    transform: translate(300px, 0);
+  }
+
+  #insta:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #twt {
+    transform: translate(300px, 0);
+  }
+
+  #twt:hover {
+    transform: translate(300px,-99px);
+  }
 
 }
 
