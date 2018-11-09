@@ -1,13 +1,25 @@
 body {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   font-family: 'Adobe Caslon Pro', sans-serif;
   margin: 0;
   width: 100%;
   max-width: 100%;
+=======
+  font-family: 'Adobe Caslon Pro';
+  margin: 0;
+
+>>>>>>> 4d8589ebbf8f22594ef1bb609416985dda8f0751
 }
 
 nav {
+  z-index: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.indx-nav {
   position: fixed;
   display: flex;
   flex-wrap: wrap;
@@ -15,9 +27,35 @@ nav {
   width: 100%;
   align-items: center;
   margin: 0;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-name: animacion-entrada-nav;
+  animation-fill-mode: forwards;
+  animation-delay: .3s;
+  background-color: none;
+  z-index: 2;
 }
 
-nav a {
+@keyframes animacion-entrada-nav {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  50% {
+    opacity: .3;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.indx-nav a {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 0;
@@ -25,16 +63,17 @@ nav a {
   transition: all .5s ease;
 }
 
-nav a:hover {
+.indx-nav a:hover {
   color: #c49619;
   letter-spacing: 6px;
 }
 
-nav img {
+.indx-nav img {
   margin: 15px;
 }
 
 .inicio {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,14 +82,41 @@ nav img {
   background-image: url("../images/fondo-inicio.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center top;
   color: #ffffff;
-<<<<<<< HEAD
-  padding: 100px;
-  height: 1000px;
-=======
-  padding: 250px 100px 300px;
   margin: 0;
->>>>>>> a7c5e6f5445be8ee13642b9c5aff116cf3b03df8
+  height: 100vh;
+
+}
+
+.inicio > * {
+  opacity: 0;
+ transform: translateY(100px);
+  animation-duration: .5s;
+  animation-timing-function: ease;
+  animation-name: animacion-entrada-header;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animacion-entrada-header {
+  0% {
+    opacity: 0;
+    /*transform: translateY(-50px);*/
+  }
+
+  50% {
+    opacity: .3;
+  }
+
+  100% {
+    opacity: 1;
+    /*transform: translateY(0);*/
+  }
+}
+
+.inicio > *:last-child {
+  animation-delay: 2s;
 }
 
 .inicio span {
@@ -62,50 +128,229 @@ nav img {
 
 .inicio h3 {
   margin: 0;
+  font-size: 2em;
 }
 
 h3 {
   font-style: italic;
   font-weight: 400;
+}
+
+#scroll-inicio {
+  margin: 150px 0 0;
+  transform: translateY(-60px);
+  position: relative;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-name: flota;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flota {
+  0% {
+    transform: translateY(-20px);
+    }
+  50% {
+    transform: translateY(0);
+   }
+  100% {
+    transform: translateY(-20px);
+    }
+}
+
+.intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nav-cursos {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  background: #ffffff;
+}
+
+.nav-cursos a{
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0;
+  font-size: 1.5em;
+  transition: all .5s ease;
+}
+
+.nav-cursos a:hover {
+  color: #c49619;
+  letter-spacing: 6px;
+}
+
+.nav-cursos img {
+  margin: 15px;
+  width: 3%;
+  height: 3%;
+}
+.container-fluid{
+  padding-top: 10%;
+}
+.img-principal{
+  margin-bottom: 20px;
+}
+article div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article img{
+  box-shadow: 10px 15px 20px rgb(0,0, 0, .3);
+  display: block;
+  margin: auto;
+  padding-top: -20px;
+  z-index: 0;
+  width:60%;
+}
+
+article h1{
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 5px 20px;
+  font-size: 30px;
+  font-weight: normal;
+  display: flex;
+  transform: translate(0,20px);
+  margin: auto;
+}
+
+article p{
+  width: 80%;
+  padding-top: 30px;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768)
+{
+
+}
+
+.equipo-intro {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  height: 100vh;
+}
+
+.equipo-intro h1,
+.equipo-intro h2,
+.equipo-intro h3 {
+  color: #000000;
+  background-color: #ffffff;
+  z-index: 1;
+  margin: 0;
+}
+
+.equipo-intro div {
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  background-image: url("../images/Equipo-HA.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 350px;
+  width: 80%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+  box-shadow: 5px 5px 20px #000000;
+}
+
+.equipo-intro h1 {
+  transform: translate(0, 20px);
+  padding: 0 10px;
+  margin: 100px 0 0;
+}
+
+.equipo-intro div h2,
+.equipo-intro div h3 {
+  text-align: right;
+  padding: 0 5px;
+}
+
+.intro button {
   font-size: 2em;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 15px;
+  font-family: 'Adobe Caslon Pro';
+  margin: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000000;
+  transition: all .7s ease;
+}
+
+.intro button:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #c49619;
+  font-size: 2.3em;
 }
 
 /*Mobile*/
 @media screen and (max-width: 600px) {
-  /*CSS Para Dispositivos Chicos*/
-  header,
-  footer,
-  main {
-    width: 100%;
-    max-width: calc(100% - 40%);
-  }
+/*CSS Para Dispositivos Chicos*/
 
   .inicio  {
-    background-size: 320%;
+    background-size: 400%;
     background-position: center top;
   }
 
-  nav {
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    flex-basis: 100%;
+  .indx-nav {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .indx-nav a {
+    font-size: 1em;
   }
 
   .inicio span {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 
-  nav img {
+  .indx-nav img {
     order: -1;
+  }
+
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HAmobile.jpg");
+    background-size: 120%;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   /*TABLETS Y CRAPPY PCS*/
+  .inicio  {
+    background-size: 300%;
+    background-position: center top;
+  }
 
-}
-
-<<<<<<< HEAD
 .barra-nosotros {
   align-items: center;
   display: flex;
@@ -356,18 +601,27 @@ h3 {
 
 }
 
+  .indx-nav a {
+    font-size: 2em;
+  }
 
+  .inicio span {
+    font-size: 3em;
+  }
 
+  .indx-nav img {
+    order: -1;
+  }
 
+  .equipo-intro div {
+    background-size: 250%;
+    background-position: left top;
+  }
 
+}
 
-
-
-
-
-=======
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
-  /*COMUTADORAS DE ESCRITORIO*/
+  /*COMPUTADORAS DE ESCRITORIO*/
 
 }
 
@@ -376,4 +630,3 @@ h3 {
 
 }
 
->>>>>>> a7c5e6f5445be8ee13642b9c5aff116cf3b03df8
