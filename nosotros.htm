@@ -14,16 +14,16 @@
       <a href="">Menú</a>
       <a href="">Cursos</a>
     </nav>
-    <header>
+    <header class="prueba">
       <div class="img-principal">
         <h1>Nosotros</h1>
         <div></div>
       </div>
     </header>
-  <main>
+  <main class="prueba">
     <div class="texto1">
           <h2>EL HADA DE AZÚCAR</h2>
-          <H4>respostería</H4>
+          <h4>respostería</h4>
     </div>
     <div class="texto">
         <span>
@@ -54,50 +54,135 @@
     </div>
     <div class="estrellas">
       <h1>Las estrellas</h1>
-      <div class="img-estrellas">
-        <div class="pastel">
-          <a href="#">
+      <!-- carrusel 1 -->
+      <div class="slide uno">
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-          <a href="#">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-          <a href="#">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-        </div>
-        <div class="pastel">
-          <a href="#">
+        </nav>
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-          <a href="#">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-          <a href="#">
+          <a onmousedown="toggleOverlay()">
               <p>Pastelillo de limón</p>
             <img src="images/pastelito.jpeg" alt="">
           </a>
-        </div>
+        </nav>
       </div>
+      <!-- carrusel 2 -->
+      <div class="slide dos">
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+        </nav>
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel2.jpeg" alt="">
+          </a>
+        </nav>
+      </div>
+      <!-- carrusel 3 -->
+      <div class="slide tres">
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+        </nav>
+        <nav class="pastel">
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+          <a onmousedown="toggleOverlay()">
+              <p>Pastelillo de limón</p>
+            <img src="images/pastel3.jpeg" alt="">
+          </a>
+        </nav>
+      </div>
+
       <div class="boton-estrellas">
-        <button>*</button>
-        <button>*</button>
-        <button>*</button>
+        <button id="uno" autofocus>*</button>
+        <button id="dos" >*</button>
+        <button id="tres" >*</button>
       </div>
-      <span>2018</span>
+      <span class="fecha uno">2018</span>
+      <span class="fecha dos">2017</span>
+      <span class="fecha tres">2016</span>
+
       <div id="linea"></div>
     </div>
+
+    <!-- Start Overlay -->
+    <div id="overlay"></div>
+    <!-- End Overlay -->
+    <!-- Start Special Centered Box -->
+    <div id="specialBox">
+      <div id="img-overlay"></div>
+      <div id="texto-overlay"></div>
+      <h2>Pastelillo de limón</h2>
+      <p>2018</p>
+      <p>Pastelillo sabor limón, relleno de crema
+          pastelera, cubierto de un deleitable
+          merengue de limón. </span>
+      <button onmousedown="toggleOverlay()"></button>
+    </div>
+    <!-- End Special Centered Box -->
+    <!-- Start Normal Page Content -->
+
   </main>
   <footer></footer>
   <link rel="stylesheet" href="css/style.css">
   <script
     src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
-  <script src="js/jquery.js"></script>
+  </script>
+  <script src="javascript.js"></script>
 </body>
 </html>
