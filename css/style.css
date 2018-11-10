@@ -1,14 +1,10 @@
 
 body, 
-#slider,
-.wrap,
 .slide-content {
   font-family: 'Adobe Caslon Pro', sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
-  overflow-x: hidden; 
 }
 
 
@@ -57,6 +53,7 @@ header {
 .slide-content{
   top: 0;
   overflow: hidden;
+  height: 100vh;
 }
 
 .slide-content section{
@@ -109,7 +106,7 @@ header span {
   letter-spacing: 10px;
 }
 #carta{
-
+  margin-bottom: 40px; 
   margin-top: 45px;
   font-weight: 200;
   font-size: 50px;
@@ -136,6 +133,7 @@ header span {
   margin-left: auto;
   margin-right: auto;
 }
+
 .contenedor__menu img{
   width: 50%x;
   height: 50%;
@@ -185,7 +183,7 @@ header span {
 }
 
 
-.wrap{
+.main .wrap{
   position: relative;
 }
 .slide{
