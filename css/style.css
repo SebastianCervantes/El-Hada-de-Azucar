@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   z-index: 0;
   width: 100%;
@@ -317,6 +321,7 @@ article p{
 }
 
 
+
 .img-principal {
   display: flex;
   justify-content: center;
@@ -618,6 +623,227 @@ article p{
 }
 
 
+.menu-intro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/ListonDorado.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+
+.menu-intro div>h1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #000000;
+  background: linear-gradient(90deg,#999 0%, #ffffff 25%);
+  padding: 5px 15px 5px 60px;
+  z-index: -1;
+  margin: 30px;
+  width: 100%;
+}
+
+.menu-intro div>button {
+  margin: 0;
+}
+
+.menu-intro img {
+  z-index: 2;
+}
+
+.menu-intro>div {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  height: 60vh;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-intro>div>div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#escondido {
+  display: none;
+}
+
+.intro-cursos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/Cursos-intro.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.intro-cursos h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.intro-cursos button {
+  margin: 0;
+  background-color: #fff;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 90%;
+}
+
+.contacto form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contacto h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: 2em;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px 15px;
+  font-family: 'Adobe Caslon Pro';
+  margin: 30px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #000000;
+  transition: all .7s ease;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: #c49619;
+  font-size: 2.3em;
+}
+
+.contacto iframe {
+  width: 400px;
+  height: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+  height: 25vh;
+  padding: 10px 50px;
+}
+
+footer>section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+footer>section>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0 10px 0 0;
+}
+
+footer .social{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: left;
+}
+
+footer>section>div>p {
+  color: #fff;
+  font-family: 'Montserrat';
+  margin: 0 0 15px;
+  font-size: 10pt;
+  font-weight: 100;
+}
+
+footer>section>div>.titulo {
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+
+.social>div {
+  display: inline-block;
+  overflow: hidden;
+  height: 55px;
+  width: 250px;
+  margin: 0;
+}
+
+footer>section>div>img {
+  position: relative;
+  transform: translate(0,0);
+  transition: all 0 ease;
+}
+
+#fb {
+  transform: translate(0, 0);
+}
+
+#fb:hover {
+  transform: translate(0,-86px);
+}
+
+#insta {
+  transform: translate(0, 0);
+}
+
+#insta:hover {
+  transform: translate(0,-86px);
+}
+
+#twt {
+  transform: translate(0, 0);
+}
+
+#twt:hover {
+  transform: translate(0,-86px);
+}
+
+
 /*Mobile*/
 @media screen and (max-width: 600px) {
 /*CSS Para Dispositivos Chicos*/
@@ -656,6 +882,7 @@ article p{
     background-image: url("../images/Equipo-HAmobile.jpg");
     background-size: 120%;
   }
+
   .img-principal div {
     height: 70px;
     margin-top: 10%;
@@ -727,6 +954,7 @@ article p{
   .estrellas span {
     font-size: 13px;
 }
+
 
   .equipo-intro div h2{
     font-size: 1.5em
@@ -801,7 +1029,7 @@ article p{
     flex-direction: column;
     height: 40vh;
     padding: 5px
-    
+
   }
 
   footer>section {
@@ -872,6 +1100,7 @@ article p{
 
   .inicio h3 {
     font-size: 2em;
+
   }
 
   #home>img {
@@ -888,6 +1117,7 @@ article p{
     background-size: 250%;
     background-position: left top;
   }
+
 
   .img-principal div {
     height: 175px;
@@ -933,6 +1163,7 @@ article p{
     font-size: 35px;
     width: 30%;
   }
+
 
   .equipo-intro h1 {
     margin: 100px 0 0;
@@ -1016,6 +1247,7 @@ article p{
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
   /*COMPUTADORAS DE ESCRITORIO*/
 
+
   .img-principal div {
     height: 270px;
   }
@@ -1035,6 +1267,7 @@ article p{
     transform: translate(0, -35px);
   }
   
+
   .equipo-intro div {
     background-image: url("../images/Equipo-HA.jpg");
     background-size: 100%;
@@ -1053,6 +1286,7 @@ article p{
 
 @media screen and (min-width: 2401px) {
   /*TODO LO GIGANTE*/
+
   .barra-nosotros {
     width: 80%;
   }
@@ -1114,6 +1348,7 @@ article p{
   .estrellas span {
     font-size: 50px;
 }
+
   .inicio  {
     background-size: 250%;
     background-position: center top;
@@ -1190,6 +1425,89 @@ article p{
 .menu-intro>div>div>button {
   transform: translate(-50px, 0);
 }
+
+
+  .intro-cursos {
+    background-size: 80%;
+  }
+
+  .intro-cursos h1 {
+    font-size: 6em;
+  }
+
+  .intro-cursos button {
+    margin: 50px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 6em;
+  }
+
+  .contacto iframe {
+    width: 800px;
+    height: 300px;
+  }
+
+  .contacto form {
+    width: 50%;
+  }
+
+  .contacto input[type=text] {
+    font-size: 3em;
+    padding: 20px 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    height: 20vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 25px;
+  }
+
+  .social>div>img {
+    width: 15%;
+  }
+
+  .social>div {
+    width: 600px;
+    height: 70px;
+  }
+
+  #fb {
+    transform: translate(300px, 0);
+  }
+
+  #fb:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #insta {
+    transform: translate(300px, 0);
+  }
+
+  #insta:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #twt {
+    transform: translate(300px, 0);
+  }
+
+  #twt:hover {
+    transform: translate(300px,-99px);
+  }
+
 
   .intro-cursos {
     background-size: 80%;

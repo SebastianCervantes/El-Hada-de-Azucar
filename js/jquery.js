@@ -6,6 +6,7 @@
          return false;
       });
 
+
       var scroll_pos = 0;
             $(document).scroll(function() {
                 scroll_pos = $(this).scrollTop();
@@ -20,6 +21,7 @@
                     //$("#home").attr("src", "../images/Luna-Logo-02.png");
                 }
             });
+
 
 
 
