@@ -1,9 +1,16 @@
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Adobe Caslon Pro', sans-serif;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
   font-family: 'Adobe Caslon Pro';
   margin: 0;
+}
 
+a {
+  text-decoration: none;
 }
 
 a {
@@ -224,7 +231,7 @@ article img{
   box-shadow: 10px 15px 20px rgb(0,0, 0, .3);
   display: block;
   margin: auto;
-  padding top: -20px;
+  padding-top: -20px;
   z-index: 0;
   width:60%;
 }
@@ -247,11 +254,6 @@ article p{
   font-size: 25px;
   text-align: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 768)
-{
-
 }
 
 .equipo-intro {
@@ -317,6 +319,309 @@ article p{
   color: #c49619;
   font-size: 2.3em;
 }
+
+
+
+.img-principal {
+  display: flex;
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.img-principal div {
+  background-image: url(../images/Arriba.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin: 0;
+  width: 70%;
+}
+
+.img-principal h1 {
+  background-color: #ffffff;
+  color: #000;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0 30px 10px;
+  position: absolute;
+  transform: translate(0, -15px);
+}
+
+.texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto1 h2 {
+  font-size: 35px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 10%;
+  text-align: center;
+}
+
+.texto1 h4 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.texto {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.texto span{
+  text-align: center;
+  font-size: 30px;
+  width: 70%;
+}
+
+.frase {
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  padding-bottom: 25%;
+}
+
+.frase span {
+  text-align: center;
+  font-size: 35px;
+  width: 47%;
+  padding-top: 5%;
+}
+
+.frase span p {
+  position: relative;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  padding-top: 3%;
+}
+
+.frase span strong {
+  color: #c49619;
+}
+
+.frase img{
+  position: absolute;
+  width: 10%;
+  transform: translate(-160px, 40px);
+  z-index: -1;
+}
+
+#cerradas {
+  position: absolute;
+  width: 10%;
+  transform: translate(160px, 90px);
+  z-index: -1;
+}
+
+#fresas {
+  position: absolute;
+  width: 10%;
+  transform: translate(470px, -50px) scale(2.5);
+  z-index: -1;
+}
+
+#mantequilla {
+  position: absolute;
+  width: 10%;
+  transform: translate(-400px, 200px) scale(3.3) rotate(-30deg);
+  z-index: -2;
+}
+
+.estrellas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  flex-direction: column;
+}
+
+.estrellas h1 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #1c2541;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid #c49619;
+  width: 15%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pastel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 5%;
+
+}
+.pastel a img{
+  width: 200px;
+  height: 100%;
+  margin: 10px;
+}
+
+.pastel a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(0%);
+  background: none;
+  transition: 0.2s linear;
+}
+
+.pastel a p{
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  transition: 0.09s linear;
+  padding-top: 20%;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.pastel a p:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pastel a:hover {
+  filter: grayscale(80%);
+}
+
+#linea {
+  border-bottom: 2px solid #c49619;
+  width: 15%;
+  height: 100%;
+  padding-top: 3%;
+}
+
+.boton-estrellas {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+.boton-estrellas button {
+  cursor: pointer;
+  background-color: #f0edee;
+  border: 0;
+  border-radius: 50%;
+  width: 65px;
+  height: 25px;
+  color: #f0edee;
+  margin: 10%;
+  outline: none;
+}
+
+.estrellas span {
+  font-size: 30px;
+  padding-top: 0.5%;
+}
+
+.boton-estrellas button:hover {
+  background-color: #1c2541;
+  color: #1c2541;
+  transition: 0.3s ease-in;
+}
+
+.boton-estrellas button:focus {
+  background-color: #1c2541;
+  color: #1c2541;
+}
+
+#overlay {
+	display: none;
+	z-index: 2;
+	background: #000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+#specialBox {
+  display: none;
+  justify-content: space-around;
+  flex-direction: row;
+	position: absolute;
+  z-index: 3;
+  top: 210%;
+  left: 10%;
+	margin: 150px auto 0px auto;
+	width: 80%;
+	height: 70%;
+	background: #1c2541;
+  color: #000;
+}
+
+#specialBox button {
+  position: absolute;
+  cursor: pointer;
+  background-image: url(../images/equis.png);
+  background-repeat: no-repeat;
+  width: 3%;
+  height: 6%;
+  background-size: 100%;
+  background-color: #1c2541;
+  border: none;
+  background-position: center;
+  margin: 20px;
+  right: 10px;
+  top: 10px;
+}
+
+#img-overlay {
+  position: absolute;
+  background-image: url(../images/pastelito.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 500px;
+  height: 500px;
+  margin: 60px;
+  top: 4%;
+  left: 0;
+}
+
+#specialBox h2{
+  margin-left:600px;
+  margin-top: 200px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 200;
+
+}
+#specialBox p{
+  margin-left:600px;
+  margin-top: 0px;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 200;
+
+}
+
 
 .menu-intro {
   display: flex;
@@ -538,6 +843,7 @@ footer>section>div>img {
   transform: translate(0,-86px);
 }
 
+
 /*Mobile*/
 @media screen and (max-width: 600px) {
 /*CSS Para Dispositivos Chicos*/
@@ -576,6 +882,79 @@ footer>section>div>img {
     background-image: url("../images/Equipo-HAmobile.jpg");
     background-size: 120%;
   }
+
+  .img-principal div {
+    height: 70px;
+    margin-top: 10%;
+  }
+
+  .texto1 h2 {
+    font-size: 20px;
+  }
+
+  .texto1 h4 {
+    font-size: 10px;
+  }
+
+  .img-principal h1 {
+    font-size: 22px;
+    transform: translate(0, 10px);
+  }
+
+  .texto span {
+    font-size: 10px;
+  }
+
+  .frase span {
+    font-size: 15px;
+  }
+
+  .frase span p {
+    font-size: 10px;
+  }
+
+  .pastel a img{
+    width: 80px;
+  }
+
+  .estrellas h1 {
+    font-size: 25px;
+    width: 50%;
+  }
+
+  #fresas {
+    width: 10%;
+    transform: translate(120px, 10px) scale(1.5);
+  }
+
+  #mantequilla {
+    position: absolute;
+    width: 10%;
+    transform: translate(-100px, 100px) scale(2.5) rotate(-30deg);
+  }
+
+  .frase img{
+    transform: translate(-70px, 10px);
+  }
+
+  #cerradas {
+    transform: translate(55px, 75px);
+  }
+
+  .pastel a img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .boton-estrellas button {
+    width: 10px;
+    height: 14px;
+  }
+
+  .estrellas span {
+    font-size: 13px;
+}
+
 
   .equipo-intro div h2{
     font-size: 1.5em
@@ -650,6 +1029,7 @@ footer>section>div>img {
     flex-direction: column;
     height: 40vh;
     padding: 5px
+
   }
 
   footer>section {
@@ -720,6 +1100,7 @@ footer>section>div>img {
 
   .inicio h3 {
     font-size: 2em;
+
   }
 
   #home>img {
@@ -736,6 +1117,53 @@ footer>section>div>img {
     background-size: 250%;
     background-position: left top;
   }
+
+
+  .img-principal div {
+    height: 175px;
+  }
+
+  #fresas {
+    width: 10%;
+    transform: translate(295px, -10px) scale(1.5);
+  }
+
+  #mantequilla {
+    position: absolute;
+    width: 10%;
+    transform: translate(-240px, 200px) scale(2.5) rotate(-30deg);
+  }
+
+  .texto1 h2 {
+    font-size: 35px;
+  }
+
+  .texto1 h4 {
+    font-size: 20px;
+  }
+
+  .img-principal h1 {
+    font-size: 40px;
+    transform: translate(0, -35px);
+  }
+
+  .texto span {
+    font-size: 25px;
+  }
+
+  .frase span {
+    font-size: 30px;
+  }
+
+  .pastel a img{
+    width: 180px;
+  }
+
+  .estrellas h1 {
+    font-size: 35px;
+    width: 30%;
+  }
+
 
   .equipo-intro h1 {
     margin: 100px 0 0;
@@ -819,6 +1247,27 @@ footer>section>div>img {
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
   /*COMPUTADORAS DE ESCRITORIO*/
 
+
+  .img-principal div {
+    height: 270px;
+  }
+
+  #fresas {
+    width: 10%;
+    transform: translate(395px, -90px) scale(1.3);
+  }
+
+  #mantequilla {
+    width: 10%;
+    transform: translate(-340px, 200px) scale(2.3) rotate(-30deg);
+  }
+
+  .img-principal h1 {
+    font-size: 50px;
+    transform: translate(0, -35px);
+  }
+  
+
   .equipo-intro div {
     background-image: url("../images/Equipo-HA.jpg");
     background-size: 100%;
@@ -837,6 +1286,69 @@ footer>section>div>img {
 
 @media screen and (min-width: 2401px) {
   /*TODO LO GIGANTE*/
+
+  .barra-nosotros {
+    width: 80%;
+  }
+  .prueba {
+    width: 100%;
+  }
+  .img-principal div {
+    height: 550px;
+  }
+
+  .barra-nosotros a {
+    font-size: 3.5em;
+  }
+  .texto1 h2 {
+    font-size: 65px;
+  }
+
+  .texto1 h4 {
+    font-size: 40px;
+  }
+
+  .img-principal h1 {
+    font-size: 80px;
+    transform: translate(0, -35px);
+  }
+
+  .texto span {
+    font-size: 45px;
+  }
+
+  .frase span {
+    font-size: 60px;
+  }
+
+  #fresas {
+    width: 10%;
+    transform: translate(795px, -90px) scale(2.3);
+  }
+
+  #mantequilla {
+    width: 10%;
+    transform: translate(-640px, 300px) scale(3.3) rotate(-30deg);
+  }
+
+  .estrellas {
+    padding-top: 20%;
+  }
+
+  .estrellas h1 {
+    font-size: 80px;
+    width: 25%;
+    border-bottom: 5px solid #c49619;
+  }
+
+  .pastel a img{
+    width: 400px;
+  }
+
+  .estrellas span {
+    font-size: 50px;
+}
+
   .inicio  {
     background-size: 250%;
     background-position: center top;
@@ -913,6 +1425,7 @@ footer>section>div>img {
 .menu-intro>div>div>button {
   transform: translate(-50px, 0);
 }
+
 
   .intro-cursos {
     background-size: 80%;
@@ -995,5 +1508,90 @@ footer>section>div>img {
     transform: translate(300px,-99px);
   }
 
+
+  .intro-cursos {
+    background-size: 80%;
+  }
+
+  .intro-cursos h1 {
+    font-size: 6em;
+  }
+
+  .intro-cursos button {
+    margin: 50px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 6em;
+  }
+
+  .contacto iframe {
+    width: 800px;
+    height: 300px;
+  }
+
+  .contacto form {
+    width: 50%;
+  }
+
+  .contacto input[type=text] {
+    font-size: 3em;
+    padding: 20px 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    height: 20vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 25px;
+  }
+
+  .social>div>img {
+    width: 15%;
+  }
+
+  .social>div {
+    width: 600px;
+    height: 70px;
+  }
+
+  #fb {
+    transform: translate(300px, 0);
+  }
+
+  #fb:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #insta {
+    transform: translate(300px, 0);
+  }
+
+  #insta:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #twt {
+    transform: translate(300px, 0);
+  }
+
+  #twt:hover {
+    transform: translate(300px,-99px);
+  }
+
+#linea {
+  border-bottom: 5px solid #c49619;
+}
 }
 
