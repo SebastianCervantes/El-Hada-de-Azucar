@@ -17,6 +17,7 @@ a {
   text-decoration: none;
 }
 
+
 nav {
   z-index: 0;
   width: 100%;
@@ -150,15 +151,15 @@ h3 {
 }
 
 #scroll-inicio {
-  margin: 150px 0 0;
-  transform: translateY(-60px);
-  position: relative;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-name: flota;
-  animation-fill-mode: forwards;
   animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
   animation-iteration-count: infinite;
+  animation-name: flota;
+  animation-timing-function: ease;
+  margin: 150px 0 0;
+  position: relative;
+  transform: translateY(-60px);
 }
 
 @keyframes flota {
@@ -174,33 +175,33 @@ h3 {
 }
 
 .intro {
-  width: 100%;
+  align-content: center;
+  align-items: center;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  align-content: center;
-  color: #ffffff;
   margin: 0;
+  width: 100%;
 }
 
 .nav-cursos {
-  z-index: 2;
-  position: fixed;
+  align-items: center;
+  background: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100%;
-  align-items: center;
   margin: 0;
-  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .nav-cursos a{
-  text-decoration: none;
   color: #000000;
-  letter-spacing: 0;
   font-size: 1.5em;
+  letter-spacing: 0;
+  text-decoration: none;
   transition: all .5s ease;
 }
 
@@ -210,21 +211,24 @@ h3 {
 }
 
 .nav-cursos img {
+  height: 3%;
   margin: 15px;
   width: 3%;
-  height: 3%;
 }
-.container-fluid{
-  padding-top: 10%;
+
+.container{
+  padding-top: 8%;
 }
-.img-principal{
+
+.row{
   margin-bottom: 20px;
 }
+
 article div{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
 }
 
 article img{
@@ -232,29 +236,170 @@ article img{
   display: block;
   margin: auto;
   padding-top: -20px;
-  z-index: 0;
   width:60%;
+  z-index: 0;
 }
 
 article h1{
-  z-index: 1;
   background-color: #ffffff;
-  padding: 5px 20px;
+  display: flex;
   font-size: 30px;
   font-weight: normal;
-  display: flex;
-  transform: translate(0,20px);
   margin: auto;
+  padding: 5px 20px;
+  transform: translate(0,20px);
+  z-index: 1;
 }
 
 article p{
-  width: 80%;
-  padding-top: 30px;
-  margin: auto;
   font-size: 25px;
-  text-align: center;
   justify-content: center;
+  margin: auto;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+  width: 80%;
 }
+
+.card{
+  align-content: center;
+  border: none;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+
+.card a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.card p{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card img{
+  background: none;
+  display: flex;
+  filter: grayscale(0%);
+  transition: 0.2s linear;
+}
+
+.card img:hover{
+  filter: drop-shadow(0px 10px 10px black)
+  saturate(30%) grayscale(30%);
+  justify-content: center;
+  transform: translate(-10px,-20px);
+  width: 120%;
+  z-index: 3;
+}
+
+.modal fade{
+  font-weight: normal;
+  margin: auto;
+  overflow: auto;
+  padding: 5px 20px;
+  transform: translate(0,20px);
+  width: auto;
+  z-index: 1;
+}
+
+.modal-content{
+  animation-duration: 0.5s;
+  animation-name: animatetop;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 120%;
+}
+
+@keyframes animatetop {
+  from {top: 300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+.modal-header{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+}
+
+.modal-header .modal-title{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.modal-header > div{
+  justify-content: row;
+  padding: 20px;
+
+}
+
+.modal-content{
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.modal-content .close{
+  color: #C2962C;
+  margin: 0;
+  font-size: 50px;
+  align-self: flex-end;
+}
+
+.modal-header span{
+  font-size: 20px;
+  padding: 0px 10px;
+  flex-wrap: nowrap;
+}
+
+.modal-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-body h1{
+  font-size: 25px;
+  padding: 20px 10px;
+  letter-spacing: 5px;
+}
+.modal-body p{
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+
+.modal-body p span{
+  padding: 10px;
+}
+
+.modal-footer{
+  align-self: flex-end;
+}
+
 
 .equipo-intro {
   display: flex;
@@ -372,6 +517,13 @@ article p{
   text-align: center;
 }
 
+
+  a.img-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
 .texto {
   display: flex;
   justify-content: center;
@@ -383,6 +535,7 @@ article p{
   font-size: 30px;
   width: 70%;
 }
+
 
 .frase {
   display: flex;
@@ -1594,4 +1747,3 @@ footer>section>div>img {
   border-bottom: 5px solid #c49619;
 }
 }
-
