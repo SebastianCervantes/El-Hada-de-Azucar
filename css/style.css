@@ -6,6 +6,7 @@ body {
 
 }
 
+
 nav {
   z-index: 0;
   width: 100%;
@@ -195,8 +196,8 @@ h3 {
   width: 3%;
 }
 
-.container-fluid{
-  padding-top: 10%;
+.container{
+  padding-top: 8%;
 }
 
 .row{
@@ -241,21 +242,23 @@ article p{
 }
 
 .card{
-  width: 80%;
-  display: flex;
   align-content: center;
+  border: none;
+  display: flex;
   margin: auto;
+  width: 80%;
 }
+
 .card a{
-  text-decoration: none;
   color: #000000;
+  text-decoration: none;
 }
 
 .card p{
   display: flex;
-  justify-content: center;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 25px;
+  justify-content: center;
   padding-top: 10px;
 }
 
@@ -267,9 +270,114 @@ article p{
 }
 
 .card img:hover{
-  filter: grayscale(80%);
+  filter: drop-shadow(0px 10px 10px black)
+  saturate(30%) grayscale(30%);
+  justify-content: center;
+  transform: translate(-10px,-20px);
+  width: 120%;
+  z-index: 3;
 }
 
+.modal fade{
+  font-weight: normal;
+  margin: auto;
+  overflow: auto;
+  padding: 5px 20px;
+  transform: translate(0,20px);
+  width: auto;
+  z-index: 1;
+}
+
+.modal-content{
+  animation-duration: 0.5s;
+  animation-name: animatetop;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 120%;
+}
+
+@keyframes animatetop {
+  from {top: 300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+
+.modal-header{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;;
+}
+
+.modal-header .modal-title{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.modal-header > div{
+  justify-content: row;
+  padding: 20px;
+
+}
+
+.modal-content{
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.modal-content .close{
+  color: #C2962C;
+  margin: 0;
+  font-size: 50px;
+  align-self: flex-end;
+}
+
+.modal-header span{
+  font-size: 20px;
+  padding: 0px 10px;
+  flex-wrap: nowrap;
+}
+
+.modal-body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video{
+  width: 80%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-body h1{
+  font-size: 25px;
+  padding: 20px 10px;
+  letter-spacing: 5px;
+}
+.modal-body p{
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.modal-body p span{
+  padding: 10px;
+}
+
+.modal-footer{
+  align-self: flex-end;
+}
 
 .equipo-intro {
   display: flex;
