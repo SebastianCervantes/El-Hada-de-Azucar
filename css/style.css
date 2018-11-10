@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
   z-index: 0;
   width: 100%;
@@ -30,7 +34,7 @@ nav {
   animation-name: animacion-entrada-nav;
   animation-fill-mode: forwards;
   animation-delay: .3s;
-  background-color: none;
+  background-color: #fff;
   z-index: 2;
 }
 
@@ -53,10 +57,14 @@ nav {
 
 .indx-nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   letter-spacing: 0;
   font-size: 1.5em;
   transition: all .5s ease;
+}
+
+h1 {
+  color:#000000;
 }
 
 .indx-nav a:hover {
@@ -64,8 +72,13 @@ nav {
   letter-spacing: 6px;
 }
 
-.indx-nav img {
+#home>img {
   margin: 15px;
+  width: 100%;
+}
+
+#home {
+  width: 2%;
 }
 
 .inicio {
@@ -275,7 +288,7 @@ article p{
 .equipo-intro h1 {
   transform: translate(0, 20px);
   padding: 0 10px;
-  margin: 100px 0 0;
+  margin: 70px 0 0;
 }
 
 .equipo-intro div h2,
@@ -303,37 +316,6 @@ article p{
   font-size: 2.3em;
 }
 
-.barra-nosotros {
-  align-items: center;
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 0;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-.barra-nosotros a {
-  color: #000;
-  font-size: 1.5em;
-  letter-spacing: 0;
-  text-decoration: none;
-  transition: all .5s ease;
-}
-
-.barra-nosotros a:hover {
-  color: #c49619;
-  letter-spacing: 6px;
-}
-
-.barra-nosotros img {
-  width: 3%;
-  margin: 15px 40px 15px 15px;
-}
 
 .img-principal {
   display: flex;
@@ -658,9 +640,17 @@ article p{
     font-size: 2.2em;
   }
 
-  .indx-nav img {
-    order: -1;
+  #home>img {
+    width: 10%;
+    margin: 15px;
+    width: 60%;
   }
+
+  #home {
+    order: -1;
+    width: 15%;
+  }
+
 
   .equipo-intro div {
     background-image: url("../images/Equipo-HAmobile.jpg");
@@ -737,26 +727,163 @@ article p{
   .estrellas span {
     font-size: 13px;
 }
+
+  .equipo-intro div h2{
+    font-size: 1.5em
+  }
+  .equipo-intro div h3 {
+    font-size: 1.2em;
+  }
+
+  .menu-intro>div img {
+    max-width: calc(100% - 10px);
+  }
+
+  .menu-intro div>div>a>button {
+    display: none;
+  }
+
+  #escondido {
+    display: flex;
+    margin: 60px 30px 0;
+    transform: translate(0, -100px);
+  }
+
+  .menu-intro div>h1 {
+    font-size: 1.5em;
+    max-width: calc(100% - 60px);
+    margin: 20px 0 0;
+    transform: translate(-20px, 0);
+  }
+
+  .menu-intro>div>div {
+    width:70%;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+
+  .menu-intro {
+    background-size: 100%;
+    background-position: 50% 30%;
+    height: 60vh;
+  }
+
+  .intro-cursos {
+    background-size: 200%;
+  }
+
+  .intro-cursos button {
+    transform: translate(0, 200px);
+  }
+
+  .intro-cursos h1 {
+    font-size: 2.5em;
+    margin: 50px 0 0;
+  }
+
+  .contacto form {
+    width: 90%;
+  }
+
+  .contacto h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .contacto iframe {
+    width: 300px;
+    height: 150px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 40vh;
+    padding: 5px
+    
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 8pt;
+  }
+
+  .social>div>img {
+    width: 30%;
+  }
+
+  .social>div {
+    width: 200px;
+  }
+
+  #fb {
+    transform: translate(0, 0);
+  }
+
+  #fb:hover {
+    transform: translate(0,-66px);
+  }
+
+  #insta {
+    transform: translate(0, 0);
+  }
+
+  #insta:hover {
+    transform: translate(0,-66px);
+  }
+
+  #twt {
+    transform: translate(0, 0);
+  }
+
+  #twt:hover {
+    transform: translate(0,-66px);
+  }
+
+  .contacto h1 {
+    margin: 50px 0 0;
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   /*TABLETS Y CRAPPY PCS*/
   .inicio  {
-    background-size: 300%;
+    background-size: 250%;
     background-position: center top;
   }
+
   .indx-nav a {
     font-size: 2em;
   }
 
   .inicio span {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  .indx-nav img {
+  .inicio h3 {
+    font-size: 2em;
+  }
+
+  #home>img {
+    width: 10%;
+    margin: 15px;
+    width: 50%;
+  }
+
+  #home {
     order: -1;
+    width: 10%;
   }
-
   .equipo-intro div {
     background-size: 250%;
     background-position: left top;
@@ -807,6 +934,83 @@ article p{
     width: 30%;
   }
 
+  .equipo-intro h1 {
+    margin: 100px 0 0;
+  }
+
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HAtablet.jpg");
+    background-size: 135%;
+    height: 40vh;
+  }
+
+  .equipo-intro button {
+    margin: 100px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .menu-intro>div img {
+    max-width: calc(100% - 60px);
+  }
+
+  .intro-cursos {
+    background-size: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 30vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  .social>div>img {
+    width: 30%;
+  }
+
+  .contacto h1 {
+    margin: 70px 0 0;
+  }
+
+  .social>div {
+    width: 200px;
+  }
+
+  #fb {
+    transform: translate(0, 0);
+  }
+
+  #fb:hover {
+    transform: translate(0,-66px);
+  }
+
+  #insta {
+    transform: translate(0, 0);
+  }
+
+  #insta:hover {
+    transform: translate(0,-66px);
+  }
+
+  #twt {
+    transform: translate(0, 0);
+  }
+
+  #twt:hover {
+    transform: translate(0,-66px);
+  }
+
 }
 
 @media screen and (min-width: 1201px) and (max-width: 2400px) {
@@ -829,6 +1033,20 @@ article p{
   .img-principal h1 {
     font-size: 50px;
     transform: translate(0, -35px);
+  }
+  
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HA.jpg");
+    background-size: 100%;
+    height: 40vh;
+  }
+
+  .equipo-intro h1 {
+    margin: 100px 0 0;
+  }
+
+  .inicio {
+    background-size: 120%;
   }
 
 }
@@ -896,6 +1114,163 @@ article p{
   .estrellas span {
     font-size: 50px;
 }
+  .inicio  {
+    background-size: 250%;
+    background-position: center top;
+  }
+
+  .indx-nav a {
+    font-size: 4em;
+  }
+
+  .inicio span {
+    font-size: 6em;
+  }
+
+  .inicio>img{
+    width: 5%;
+  }
+
+  .inicio h3 {
+    font-size: 4em;
+  }
+
+  #home>img {
+    width: 50%;
+    margin: 15px;
+  }
+
+  #home {
+    width: 6%;
+  }
+
+  .equipo-intro div {
+    background-size: 250%;
+    background-position: left top;
+  }
+
+  .equipo-intro h1 {
+    margin: 200px 0 0;
+    font-size: 4em;
+  }
+
+  .equipo-intro div {
+    background-image: url("../images/Equipo-HA.jpg");
+    background-size: 100%;
+    height: 50vh;
+  }
+
+  .equipo-intro div h2 {
+    font-size: 3em;
+  }
+
+  .equipo-intro div h3 {
+    font-size: 2em;
+  }
+
+  .intro button,
+  .contacto input[type=submit] {
+    margin: 50px 0 0;
+    font-size: 4em;
+  }
+
+  .menu-intro>div img {
+    width: 90%;
+  }
+
+.menu-intro>div>div {
+  width: 50%;
+}
+
+.menu-intro div>h1 {
+  font-size: 5em;
+  transform: translate(-50px, 0);
+}
+
+.menu-intro>div>div>button {
+  transform: translate(-50px, 0);
+}
+
+  .intro-cursos {
+    background-size: 80%;
+  }
+
+  .intro-cursos h1 {
+    font-size: 6em;
+  }
+
+  .intro-cursos button {
+    margin: 50px 0 0;
+  }
+
+  .contacto h1 {
+    font-size: 6em;
+  }
+
+  .contacto iframe {
+    width: 800px;
+    height: 300px;
+  }
+
+  .contacto form {
+    width: 50%;
+  }
+
+  .contacto input[type=text] {
+    font-size: 3em;
+    padding: 20px 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    height: 20vh
+  }
+
+  footer>section {
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer>section>div>p {
+    font-size: 25px;
+  }
+
+  .social>div>img {
+    width: 15%;
+  }
+
+  .social>div {
+    width: 600px;
+    height: 70px;
+  }
+
+  #fb {
+    transform: translate(300px, 0);
+  }
+
+  #fb:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #insta {
+    transform: translate(300px, 0);
+  }
+
+  #insta:hover {
+    transform: translate(300px,-99px);
+  }
+
+  #twt {
+    transform: translate(300px, 0);
+  }
+
+  #twt:hover {
+    transform: translate(300px,-99px);
+  }
 
 #linea {
   border-bottom: 5px solid #c49619;
