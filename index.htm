@@ -7,20 +7,113 @@
   <title>El Hada de Azucar</title>
 </head>
 <body>
-    <nav>
-      <a href="">Nosotros</a>
-      <a href="">Contacto</a>
-      <img src="images/Luna-Logo-02.png" alt="">
+
+    <nav class="indx-nav">
+
+      <a href="nosotros.htm">Nosotros</a>
+      <a href="contacto.htm">Contacto</a>
+      <a href="index.htm" id="home">
+        <img src="images/luna-negra.png">
+      </a>
       <a href="menu.htm">Menú</a>
-      <a href="">Cursos</a>
+
+      <a href="cursos.htm">Cursos</a>
     </nav>
-    <header class="inicio-header">
-      <span>EL HADA DE AZUCAR</span>
-      <h3></h3>
+    <header class="inicio">
+      <img src="images/Luna-Logo-02.png" alt="">
+      <span>EL HADA DE AZÚCAR</span>
+      <h3>repostería</h3>
+      <a href="">
+          <img src="images/Flecha-04.png" id="scroll-inicio">
+      </a>
+
     </header>
-  <main>
+  <main class="intro">
+    <div class="equipo-intro">
+      <h1>Nuestro Equipo</h1>
+      <div>
+        <h2>
+            “Hemos convertido nuestra pasión en nuestra profesión.”
+        </h2>
+        <h3>
+          -El Hada de Azucar
+        </h3>
+      </div>
+      <a href="nosotros.htm">
+        <button>Conozca más</button>
+      </a>
+    </div>
+    <div class="menu-intro">
+      <div>
+        <img src="images/Box.png" alt="">
+        <div>
+          <h1>Descubre el postre del día.</h1>
+          <a href="menu.htm">
+            <button>Conozca más</button>
+          </a>
+        </div>
+      </div>
+      <a href="menu.htm">
+        <button id="escondido">Conozca más</button>
+      </a>
+    </div>
+    <div class="intro-cursos">
+        <h1>Manos a la obra</h1>
+        <a href="cursos.htm">
+          <button>Iniciar Curso</button>
+        </a>
+    </div>
+    <div class="contacto">
+        <h1>
+          Contacto
+        </h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839.8610104962191!2d-115.41664327078928!3d32.64762582802922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d771a8ee4ad4e9%3A0xd06ad9e61e05fcd0!2sAv.+Pdte.+Ignacio+Comonfort+1680%2C+Rep%C3%BAblica+Mexicana%2C+21250+Mexicali%2C+B.C.!5e0!3m2!1ses-419!2smx!4v1541740889439"
+            frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
+          <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre"
+              placeholder="Nombre..">
+            <label for="correo">Correo</label>
+            <input type="text" id="correo" name="correo"
+              placeholder="Correo..">
+            <label for="Mensaje">Mensaje</label>
+            <input type="text" id="mensaje" name="mensaje"
+              placeholder="Mensaje..">
+            <input type="submit" value="Enviar">
+          </form>
+
+    </div>
   </main>
-  <footer></footer>
+  <footer>
+    <section>
+      <div>
+        <p class="titulo">UBICACIONES</p>
+        <p>Centro Comercial Vista Hermosa,<br>Calzada Cetys 21240.</p>
+        <p>Islas Hawai 791,<br>Jacdines del Lago, 21300.</p>
+      </div>
+      <div>
+          <p class="titulo">HORARIOS</p>
+          <p>Lunes - Viernes<br>8:00 am - 10:00 pm</p>
+          <p>Sábado - Domingo<br>9:00 am a 8:00pm</p>
+      </div>
+    </section>
+    <section class="social">
+        <div>
+          <img src="images/insta.png" id="insta"
+            alt="Redes Sociales">
+          <img src="images/fb.png" id="fb"
+            alt="Redes Sociales">
+        <img src="images/twt.png" id="twt"
+          alt="Redes Sociales">
+        </div>
+    </section>
+  </footer>
   <link rel="stylesheet" href="css/style.css">
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="js/jquery.js"></script>
 </body>
 </html>
