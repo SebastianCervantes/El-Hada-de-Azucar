@@ -13,17 +13,21 @@
 </head>
 <body>
 
-  <nav>
-    <a href="">Nosotros</a>
-    <a href="">Contacto</a>
-    <a href="index.htm" style="height: 84px;"> <img src="images/Luna-Logo-02.png"></a>
-    <a href="">Menú</a>
-    <a href="">Cursos</a>
+  <nav class="indx-nav">
+
+    <a href="nosotros.htm">Nosotros</a>
+    <a href="contacto.htm">Contacto</a>
+    <a href="index.htm" id="home">
+      <img src="images/luna-negra.png">
+    </a>
+    <a href="menu.htm">Menú</a>
+
+    <a href="cursos.htm">Cursos</a>
   </nav>
 
 <!------------------------------------------------------------------------>
 <div class="dias">
-  <section style="margin-top: 0px;margin-bottom: 25px;">
+  <section style="margin-bottom: 25px;">
     <button id="lunes">L</button>
     <button id="martes">M</button>
     <button id="miercoles">M</button>
@@ -42,7 +46,7 @@
     <div class="slider">  
       <div class="slide slide1">
         <div class="slide-content">
-          <span style="margin-top: 289px; font-size: 85px;">Postre del Día</span>
+          <span style="margin-top: 250px;">Postre del Día</span>
         </div>
       </div>
         
@@ -445,7 +449,7 @@
 
 
 
-   <h1 id="carta" style="width: 25%; margin-bottom: 80px;  margin-top: 100px;">A la carta</h1>
+   <h1 id="carta" style=" margin-top: 100px;">A la carta</h1>
   <section class="contenedor__menu" style="margin-left: 125px; margin-right: 125px;">
     <div class="container">
       <div class="row">
@@ -485,7 +489,30 @@
 
     </div>
   </section>
-
+  <footer>
+    <section>
+      <div>
+        <p class="titulo">UBICACIONES</p>
+        <p>Centro Comercial Vista Hermosa,<br>Calzada Cetys 21240.</p>
+        <p>Islas Hawai 791,<br>Jacdines del Lago, 21300.</p>
+      </div>
+      <div>
+          <p class="titulo">HORARIOS</p>
+          <p>Lunes - Viernes<br>8:00 am - 10:00 pm</p>
+          <p>Sábado - Domingo<br>9:00 am a 8:00pm</p>
+      </div>
+    </section>
+    <section class="social">
+        <div>
+          <img src="images/insta.png" id="insta"
+            alt="Redes Sociales">
+          <img src="images/fb.png" id="fb"
+            alt="Redes Sociales">
+        <img src="images/twt.png" id="twt"
+          alt="Redes Sociales">
+        </div>
+    </section>
+  </footer>
  
 </body>
 </html>
